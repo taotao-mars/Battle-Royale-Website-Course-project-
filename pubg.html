@@ -1,0 +1,200 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="age_of_br_css.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>PUBG</title>
+	</head>
+	
+	<body id="pubBody">
+
+		<center><div id= "wrapper">
+			<header id="pubgHeader">
+				<a href="landingPage.html">
+					<img id="miniLogo" src="logo.png"/>
+				</a>
+			</header>
+		
+			<div class="navbar">
+				<nav role="navigation">
+	
+				<a href="homePage.html">Home</a>
+		
+				<div class="dropdown">
+					<button class="dropdownButton">The Top 3</button>
+						<div class="gameList">
+							<a href="fortnite.html">Fortnite</a>
+							<a href="pubg.html">PUBG</a>
+							<a href="h1z1.html">H1Z1</a> 
+						</div>
+		
+				</div> 
+				
+				<a href="upcoming.html">Upcoming</a>
+				<a href="specs.html">Hardware Info</a>
+				<a href="contactPage.html">Contact Us</a>
+				</nav>	
+			</div>
+			
+			<main>
+				<h3>Scroll down to view in-game maps with wiki links</h3><br><br>
+				<div class="gameNav" id="links">
+					<img src="pubgLink.png">
+					<span class="gameCap"><h1>Info</h1></span>
+				</div>
+				<div class="gameNav" id="features">
+					<img src="pubgGun.png">
+					<span class="gameCap"><h1>Features</h1></span>
+				</div>
+				<div class="gameNav" id="pricing">
+					<img src="pubgBucks.png">
+					<span class="gameCap"><h1>Pricing</h1></span>
+				</div>
+				<br><br><br>	
+				<div class="gameHid" id="hidden1">
+					<br><br><br><ul>
+						<li>Realistic animation and gameplay</li>
+						<li>Third-person shooter</li>
+						<li>Access to vehicles</li>
+						<li>Large variety of realistic weapons</li>
+						<li>Upgradeable and complex item system</li>
+						<li>Randomly spawned loot, and item drops on death</li>
+						<li>Tense, tactical, and unforgiving</li>
+					</ul>
+				</div>
+				<div class="gameHid" id="hidden2">
+					<br><br><br><ul>
+						<li>Steam/Xbox -- $29.99</li>
+						<li>Android/iOS -- Free</li>
+						<li>Ability to purchase in-game currency and aesthetic upgrades</li>
+					</ul>
+				</div>
+				<div class="gameHid" id="hidden3">
+					<br><br><br><p>Our PLAYERUNKNOWN BATTLEGROUNDS' BATTLE ROYALE will put up to 100 players on a remote island<br> 
+						for a winner-takes-allshowdown<br>
+						where strategic gameplay is as important as shooting skills.<br> 
+						Players will enter a last-man-standing battle where they try to locate<br>
+						weapons, vehicles and supplies in a graphically and tactically rich battleground<br> 
+						that eventually forces players into a shrinking play zone as they engage in a<br>
+						tense and spectacular fight to the death.<br>
+						Available on iOS, Android, PC, & Xbox One.<br><br>
+					</p>
+				</div>			
+				<br><br><br>
+				<div class="slideshow-container">
+					<h2> Screenshots </h2>
+				  <div class="mySlides">
+					<img src="http://blackholetec.com/main/sites/default/files/pubglook.jpg" style="width:75%">
+				  </div>
+
+				  <div class="mySlides">
+					<img src="https://www.windowscentral.com/sites/wpcentral.com/files/styles/large/public/field/image/2017/12/pubg-desert-pc-test.jpg?itok=rTBq7GBF" style="width:75%">
+				  </div>
+
+				  <div class="mySlides">
+					<img src="https://www.tiltreport.com/media/_99169875_pubg_x1.0.jpg" style="width:75%">
+				  </div>
+				  
+				  <div class="mySlides">
+					<img src="https://www.windowscentral.com/sites/wpcentral.com/files/styles/xlarge/public/field/image/2017/12/pubg-motorbike.jpg?itok=J0wBJEB9" style="width:75%">
+				  </div>
+
+				  <!-- Next and previous buttons -->
+				  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<script>
+					var slideIndex = 1;
+						showSlides(slideIndex);
+					function plusSlides(n) {
+					  showSlides(slideIndex += n);
+					}
+
+					function currentSlide(n) {
+					  showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+					  var i;
+					  var slides = document.getElementsByClassName("mySlides");
+					  if (n > slides.length) {slideIndex = 1}    
+					  if (n < 1) {slideIndex = slides.length}
+					  for (i = 0; i < slides.length; i++) {
+						  slides[i].style.display = "none";  
+					  }
+					  slides[slideIndex-1].style.display = "block";  
+					}
+				</script>
+				<br><br><br>
+				<h2>Media</h2><br><br>
+				<div>
+					<iframe width="560" height="315" style="float:left; margin-left: 70px;" src="https://www.youtube.com/embed/1GE1-qcp6Ic?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>	
+					</iframe>
+						<a href= "http://playbattlegrounds.com/main.pu">
+							<img src="pubgChar.png" style="width:auto;height:315px;">
+						</a>
+						<h3 style="text-align: right; margin-right: 80px;">Click above to view the Official PUBG website!</h3>
+				</div><br><br><br>
+				<h1>Erangel</h1>
+				
+				<img src="pubgErangel.jpg" usemap="#erangel-map" id="gamemap";>
+				<map name="erangel-map">
+   					<area target="" alt="Zharki" title="Zharki" href="https://pubg.gamepedia.com/Erangel/Zharki" coords="136,157,41" shape="circle">
+    					<area target="" alt="Georgopol" title="Georgopol" href="https://pubg.gamepedia.com/Erangel/Georgopol" coords="218,312,64" shape="circle">
+    					<area target="" alt="Hospital" title="Hospital" href="https://pubg.gamepedia.com/Erangel/Landmark/Hospital" coords="168,383,25" shape="circle">
+    					<area target="" alt="Gatka" title="Gatka" href="https://pubg.gamepedia.com/Erangel/Gatka" coords="280,481,62" shape="circle">
+    					<area target="" alt="Ruins" title="Ruins" href="https://pubg.gamepedia.com/Erangel/DL_(Map_Section)" coords="336,351,45" shape="circle">
+    					<area target="" alt="Quarry" title="Quarry" href="https://pubg.gamepedia.com/Erangel/BN_(Map_Section)" coords="200,629,42" shape="circle">
+    					<area target="" alt="Primorsk" title="Primorsk" href="https://pubg.gamepedia.com/Erangel/Primorsk" coords="197,737,46" shape="circle">
+    					<area target="" alt="FerryPier" title="FerryPier" href="https://pubg.gamepedia.com/Erangel/CN_(Map_Section)" coords="327,691,48" shape="circle">
+    					<area target="" alt="Pochinki" title="Pochinki" href="https://pubg.gamepedia.com/Erangel/Pochinki" coords="449,507,47" shape="circle">
+    					<area target="" alt="School" title="School" href="https://pubg.gamepedia.com/Erangel/EL_(Map_Section)" coords="516,404,27" shape="circle">
+    					<area target="" alt="Rozhok" title="Rozhok" href="https://pubg.gamepedia.com/Erangel/Rozhok" coords="489,348,40" shape="circle">
+    					<area target="" alt="ShootingRange" title="ShootingRange" href="https://pubg.gamepedia.com/Erangel/DJ_(Map_Section)" coords="404,212,36" shape="circle">
+    					<area target="" alt="Severny" title="Severny" href="https://pubg.gamepedia.com/Erangel/Severny" coords="463,139,53" shape="circle">
+    					<area target="" alt="Stalber" title="Stalber" href="https://pubg.gamepedia.com/Erangel/Stalber" coords="702,131,54" shape="circle">
+    					<area target="" alt="Kameshki" title="Kameshki" href="https://pubg.gamepedia.com/Erangel/Kameshki" coords="818,93,42" shape="circle">
+    					<area target="" alt="YasnayaPolyana" title="YasnayaPolyana" href="https://pubg.gamepedia.com/Erangel/Yasnaya_Polyana" coords="655,302,69" shape="circle">
+    					<area target="" alt="Lipovka" title="Lipovka" href="https://pubg.gamepedia.com/Erangel/Lipovka" coords="862,388,51" shape="circle">
+    					<area target="" alt="Prison" title="Prison" href="https://pubg.gamepedia.com/Erangel/GL_(Map_Section)" coords="769,449,53" shape="circle">
+    					<area target="" alt="Shelter" title="Shelter" href="https://pubg.gamepedia.com/Erangel/FL_(Map_Section)" coords="682,480,34" shape="circle">
+    					<area target="" alt="Mylta" title="Mylta" href="https://pubg.gamepedia.com/Erangel/Mylta" coords="735,587,50" shape="circle">
+    					<area target="" alt="MyltaPower" title="MyltaPower" href="https://pubg.gamepedia.com/Erangel/Mylta_Power" coords="894,565,105" shape="circle">
+    					<area target="" alt="SosnovkaMilitaryBase" title="SosnovkaMilitaryBase" href="https://pubg.gamepedia.com/Erangel/Sosnovka_Military_Base" coords="536,772,101" shape="circle">
+    					<area target="" alt="Novorepnoye" title="Novorepnoye" href="https://pubg.gamepedia.com/Erangel/Novorepnoye" coords="746,733,68" shape="circle">
+				</map>
+				<br><br><br><h1>Miramar</h1>
+				<img src="pubgMiramar.jpg" usemap="#miramar-map" id="gamemap">
+				<map name="miramar-map">
+   					<area target="" alt="LaCobreria" title="LaCobreria" href="https://pubg.gamepedia.com/Miramar/La_Cobreria" coords="310,166,58" shape="circle">
+    					<area target="" alt="ElPozo" title="ElPozo" href="https://pubg.gamepedia.com/Miramar/El_Pozo" coords="213,346,55" shape="circle">
+    					<area target="" alt="MonteNuevo" title="MonteNuevo" href="https://pubg.gamepedia.com/Miramar/Monte_Nuevo" coords="252,483,65" shape="circle">
+    					<area target="" alt="Chumacera" title="Chumacera" href="https://pubg.gamepedia.com/Miramar/Chumacera" coords="334,626,58" shape="circle">
+    					<area target="" alt="ValleDeMar" title="ValleDeMar" href="https://pubg.gamepedia.com/Miramar/Valle_del_Mar" coords="169,732,56" shape="circle">
+    					<area target="" alt="Prison" title="Prison" href="https://pubg.gamepedia.com/Miramar/Landmark/Prison" coords="88,883,39" shape="circle">
+    					<area target="" alt="LosHigos" title="LosHigos" href="https://pubg.gamepedia.com/Miramar/Los_Higos" coords="300,883,54" shape="circle">
+    					<area target="" alt="Pecado" title="Pecado" href="https://pubg.gamepedia.com/Miramar/Pecado" coords="450,515,54" shape="circle">
+    					<area target="" alt="LosLeones" title="LosLeones" href="https://pubg.gamepedia.com/Miramar/Los_Leones" coords="581,675,132" shape="circle">
+    					<area target="" alt="PuertoParaiso" title="PuertoParaiso" href="https://pubg.gamepedia.com/Miramar/Puerto_Paraíso" coords="762,766,65" shape="circle">
+    					<area target="" alt="Impala" title="Impala" href="https://pubg.gamepedia.com/Miramar/Impala" coords="777,563,68" shape="circle">
+    					<area target="" alt="ElAzahar" title="ElAzahar" href="https://pubg.gamepedia.com/Miramar/El_Azahar" coords="777,309,59" shape="circle">
+    					<area target="" alt="SanMartin" title="SanMartin" href="https://pubg.gamepedia.com/Miramar/San_Martin" coords="452,350,54" shape="circle">
+    					<area target="" alt="HaciendaDelPatron" title="HaciendaDelPatron" href="https://pubg.gamepedia.com/Miramar/Landmark/Hacienda_del_Patrón" coords="548,347,35" shape="circle">
+    					<area target="" alt="CruzDelValle" title="CruzDelValle" href="https://pubg.gamepedia.com/Miramar/Cruz_del_Valle" coords="669,181,65" shape="circle">
+    					<area target="" alt="TorreAhumada" title="TorreAhumada" href="https://pubg.gamepedia.com/Miramar/Torre_Ahumada" coords="662,59,54" shape="circle">
+    					<area target="" alt="TierraBronca" title="TierraBronca" href="https://pubg.gamepedia.com/Miramar/Tierra_Bronca" coords="805,154,51" shape="circle">
+				</map>
+				<br><br><h3>Social Media</h3><br><br>
+				<a class="twitter-timeline" data-width="40%" data-height="500" href="https://twitter.com/PUBG?lang=en">Tweets by PUBG</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
+				<a href="https://www.facebook.com/PUBG/" class="fa fa-facebook"></a>
+				<a href="https://www.instagram.com/pubg/" class="fa fa-instagram"></a>
+				<a href="https://www.reddit.com/r/PUBATTLEGROUNDS/" class="fa fa-reddit"></a><br>
+			</main>
+			<footer id="mainFooter">
+				<p> &#9400; Group 4
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

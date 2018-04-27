@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+#map {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+	
+body {
+  font-family: Arial, Helvetica, sans-serif;
+	color:white;
+}
+
+* {
+    box-sizing: border-box; 
+	
+	
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+    background-color: wheat;
+}
+
+.container {
+    border-radius: 5px;
+    background-image:url('http://i1.wp.com/inews.gtimg.com/newsapp_match/0/2232776873/0');
+  *zoom:1;
+    padding: 10px;
+}
+
+.column {
+	
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+	
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p> Get Directions or Leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div id="map" style="width:100%;height:500px"></div>
+      
+      <br>
+      Our Location
+      <br>
+      <br>
+      Rutgers University - School of Communication and Information
+      <br>
+      4 Huntington St, New Brunswick, 
+      NJ 08901
+      
+      
+    </div>
+    <div class="column">
+      <form action="submitted.html" method="get">
+        <label for="fname">First Name*</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required="required">
+        <label for="lname">Last Name*</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required="required">
+   		<input type="radio" name="gender" value="male" checked> Male<br>
+ 		<input type="radio" name="gender" value="female"> Female<br>
+  		<input type="radio" name="gender" value="other"> Other<br><br>
+
+        <label for="country">Country*</label>
+        <select id="country" name="country">
+          <option value="Austria">Austria</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="Italy">Italy</option>
+          <option value="us">US</option>
+          <option value="UK">UK</option>
+          <option value="other">Other</option>
+          
+          
+        </select>
+  E-Mail*
+   <br>
+  <input type="email" name="email" placeholder="example@mail.com" required="required">
+  <br>
+  <br>
+  Telephone*
+  <br>
+  <input type="number" name="usrtel" required="required">
+  <br>
+<br>
+        <label for="subject">Subject*</label>
+        <textarea id="subject" name="subject" required placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+
+function myMap() {
+  var myCenter = new google.maps.LatLng(40.505274,-74.453167);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 12};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMPHxZOjqML43RGOjW3wu5XFkniKH9TMw&callback=myMap"></script>
+
+</body>
+</html>

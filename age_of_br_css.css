@@ -1,0 +1,550 @@
+/*Basic Formating*/
+@font-face {
+    font-family: quantico;
+    src: url(Quantico-Regular.ttf);
+}
+
+@font-face {
+    font-family: warsaw;
+    src: url(WarsawGothic.otf);
+}
+
+body{
+	background-size:100% 100%;
+	background-attachment:fixed;
+	overflow:scroll;
+}
+
+h1{
+	font-family: 'quantico';
+} 
+
+a{
+	text-decoration: none;
+	color:inherit;
+}
+
+.infoMain{
+	font-size: 24px;
+	text-align:left;
+	font-family: 'warsaw';
+}
+ol{
+	font-size: 22px;
+}
+
+header{
+	padding: 20px 10px;
+	height: 200px;
+	color: white;
+}
+#logo{
+	width:25%;
+	height:50%;
+	display: inline;
+	margin-top:50;
+}
+#logoFix{
+	width:25%;
+	height:50%;
+	display: inline;
+	margin-top:50;
+}
+
+#miniLogo{
+	width:7%;
+	height:30%;
+	display: inline;
+	margin-top:50;
+	float:left;
+}
+
+#wrapper{
+	background: rgba(255, 255, 255, 0.8);
+	width:65%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+	height: 50px;
+	width: 100%;
+	border: none;
+    font-family: 'quanitco';
+}
+
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 11px 24px 14px 24px;
+    text-decoration: none;
+    font-family: 'quantico';
+	
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    font-family: 'quantico';
+}
+
+.dropdown .dropdownButton {
+    font-size: 20px;    
+    outline: none;
+	border: none;
+    color: white;
+    padding: 11px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: none;
+}
+
+.navbar a:hover, .dropdown:hover .dropdownButton {
+    background-color: #8b0000;
+    color: white;	
+}
+
+.gameList {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px;
+	
+}
+
+.gameList a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	font-size: 16px;
+}
+
+.gameList a:hover {
+    background-color: #8b0000;
+}
+
+.dropdown:hover .gameList {
+    display: block;
+}
+
+main{
+	padding: 15px 20px;
+}
+
+
+#mainFooter{
+	height:25px;
+	background-color:gray;
+}
+
+/* Video background*/
+* { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+
+/* Landing Page */
+#landingHeading{
+  position: absolute;
+  top: 18%;
+  width: 100%;
+  font-size: 58px;
+  letter-spacing: 3px;
+  color: #fff;
+  text-align: center;
+}
+
+
+#landingInfo{
+	position: absolute;
+	top: 39%;
+	float: left;
+	width:20%;
+	left: 30%;
+	color: #fff;
+	font-size:24px;
+}
+
+#landingButton{
+    background-color: black;
+    border: none;
+    color: gray;
+    padding: 18px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+	border-radius: 12px;
+	margin-left:9%;
+	position: absolute;
+	top: 43%;
+}
+#landingButton a{
+	text-decoration:none;
+	color:gray;
+}
+#landingButton:hover{
+	background-color:#FFE269;
+}
+
+#landingfooter{
+	position:absolute;
+	top:95%;
+	left:50%
+}
+
+/*Home Page*/
+
+#homeBody{
+	background-image: url("http://www.mmogames.com/wp-content/uploads/2017/08/H1Z1-King-of-the-Hill-Screenshot-1.jpg");
+}
+
+#homeHeader{
+	background-image: url('mainHeader.jpg');
+	background-size: 100% 100%;
+}
+
+#standardGameplay{
+	text-align:left;
+}
+
+/*Game Pages */
+
+#fortHeader{
+	
+	background-image: url("fortniteHeader.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#fortBody{
+	background-image: url("https://cdn.wccftech.com/wp-content/uploads/2018/03/Fortnite-3-patch-notes.jpg");
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container h4{
+	top:100;
+}
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+.mySlides img{
+	height:450px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  left:15%;
+}
+
+/* Position the "next button" to the right */
+.next {
+ margin-left:65%;
+ border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+#pubgHeader{
+	
+	background-image: url("pubgHeader.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#pubBody{
+	background-image: url("https://cdn.vox-cdn.com/thumbor/A2sMKJQM7R6bt9lNzKlUOmOua7s=/184x50:1647x1007/1200x800/filters:focal(823x160:1129x466)/cdn.vox-cdn.com/uploads/chorus_image/image/59485601/pubg.0.jpg");
+}
+
+#h1z1Header{
+	
+	background-image: url("h1z1Header.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#h1Body{
+	background-image: url("https://assets1.ignimgs.com/thumbs/userUploaded/2018/3/9/h1z1blogroll-1520653570570.jpg");
+}
+#gamemap{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+		
+}
+.fa {
+   padding: 20px;
+  font-size: 30px;
+  width: 5%;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-facebook:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  margin-left:2%;
+}
+
+.fa-instagram:hover {
+  opacity: 0.7;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+  margin-left:2%;
+}
+
+.fa-reddit:hover {
+  opacity: 0.7;
+  
+}
+
+
+.gameNav{
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
+	width:25%;
+	height:25%;
+}
+
+.gameNav img{
+	width: 100%;
+	height: 100%;
+}
+.gameCap{
+	display: block;
+}
+
+.gameHid{
+	display:none;
+	font-size:20px;
+	text-align:center;
+}
+.gameHid ul{
+	text-align:left;
+}
+#features:hover ~ #hidden1{
+	display:block;
+}
+
+#pricing:hover ~ #hidden2{
+	display:block;
+}
+
+#links:hover ~ #hidden3{
+	display:block;
+}
+
+#specHeader{
+		background-image: url("https://res.cloudinary.com/lmn/image/upload/e_sharpen:100/f_auto,fl_lossy,q_auto/v1/gameskinnyc/2/0/1/20180223144812-3fdcf.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size:100% auto;
+}
+
+
+/*Upcoming Games*/
+
+#upcomingBody{
+	background-image: url("https://www.gamerview.com.br/wp-content/uploads/2018/03/Darwin_Project_bg.jpg");
+}
+#upcomingheader{
+	background-image: url("upcomingHeader.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:100% auto;
+}
+
+.othergames{	
+	height:15%;
+	text-indent: 45px;
+}
+
+.otherimg{
+	height:90%;
+	float:left;
+	width:40%;
+}
+
+.hidden{
+	display:none;
+	font-size:20px;
+	text-align:left;
+	margin-left: 13%;
+}
+
+#radical:hover ~ #hidden1{
+	display:block;
+}
+
+#mavericks:hover ~ #hidden2{
+	display:block;
+}
+
+#sos:hover ~ #hidden3{
+	display:block;
+}
+
+#surviv:hover ~ #hidden4{
+	display:block;
+}
+
+#darwin:hover ~ #hidden5{
+	display:block;
+}
+
+#roe:hover ~ #hidden6{
+	display:block;
+}
+
+#othertxt{
+	padding-top:10px;
+	font-size: 25px;
+}
+
+/*Contact Page*/
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+#contactBody{
+	background-image: url("https://cdn.wccftech.com/wp-content/uploads/2018/02/mavericks_grass-2060x1159.jpg");
+}
+
+#contactHeader{
+		background-image: url("contactHeader.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size:100% 300px;
+}
+input[type=text], input[type=email], input[type=tel], select, textarea {
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit],[type=reset] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Spoiler Button Code*/
+.spoilerbutton {display:block;margin:5px 0;}
+
+.spoiler {overflow:hidden;}
+
+.spoiler > div {-webkit-transition: all 0.2s ease;-moz-transition: margin 0.2s ease;-o-transition: all 0.2s ease;transition: margin 0.2s ease;}
+
+.spoilerbutton[value="Show High Spec Gameplay"] + .spoiler > div {margin-top:-100%;}
+
+.spoilerbutton[value="Hide High Spec Gameplay"] + .spoiler {padding:5px;}
+
+.spoilerbutton[value="Show Low Spec Gameplay"] + .spoiler > div {margin-top:-100%;}
+
+.spoilerbutton[value="Hide Low Spec Gameplay"] + .spoiler {padding:5px;}
+/* End Spoiler Code*/
+
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}

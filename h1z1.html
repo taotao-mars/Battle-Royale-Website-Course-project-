@@ -1,0 +1,179 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="age_of_br_css.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>H1Z1</title>
+	</head>
+	
+	<body id="h1Body">
+		<center>
+		<div id= "wrapper">
+			<header id="h1z1Header">
+				<a href="landingPage.html">
+					<img id="miniLogo" src="logo.png"/>
+				</a>
+			</header>
+		
+			<div class="navbar">
+				<nav role="navigation">
+	
+				<a href="homePage.html">Home</a>
+		
+				<div class="dropdown">
+					<button class="dropdownButton">The Top 3</button>
+						<div class="gameList">
+							<a href="fortnite.html">Fortnite</a>
+							<a href="pubg.html">PUBG</a>
+							<a href="h1z1.html">H1Z1</a> 
+						</div>
+		
+				</div> 
+				
+				<a href="upcoming.html">Upcoming</a>
+				<a href="specs.html">Hardware Info</a>
+				<a href="contactPage.html">Contact Us</a>
+				
+				</nav>	
+			</div>
+			
+			<main>
+				<h3>Scroll down to view in-game maps with wiki links</h3><br><br>
+				<div class="gameNav" id="links">
+					<img src="h1z1Links.png">
+					<span class="gameCap"><h1>Info</h1></span>
+				</div>
+				<div class="gameNav" id="features">
+					<img src="h1z1Gun.jpg">
+					<span class="gameCap"><h1>Features</h1></span>
+				</div>
+				<div class="gameNav" id="pricing">
+					<img src="h1z1Bucks.png">
+					<span class="gameCap"><h1>Pricing</h1></span>
+				</div>
+				<br><br><br>	
+				<div class="gameHid" id="hidden1">
+					<br><br><br><ul>
+						<li>Third person shooter</li>
+						<li>More simple, arcade like feel</li>
+						<li>Longer shootouts and gunfights than other BR's</li>
+						<li>Plays faster, looser, and with less damage</li>
+						<li>Significantly more open map than other BR's</li>
+						<li>Limited selection of realistic weapons</li>
+						<li>Fast, vehicle focused, and not yet in its prime</li>
+					</ul>
+				</div>
+				<div class="gameHid" id="hidden2">
+					<br><br><br><ul>
+						<li>Battle Royale Mode -- Free</li>
+						<li>Bronze Pack -- $19.99</li>
+						<li>Silver Pack -- $49.99</li>
+						<li>Gold Pack -- $99.99</li>
+						<li>Ability to purchase in-game currency and aesthetic upgrades</li>
+						
+					</ul>
+				</div>
+				<div class="gameHid" id="hidden3">
+					<br><br><br><p> The Battle Royale game that started it all.<br>
+						Parachute in and hit the ground running.<br>
+						Whether in Solo, 2-Player, or 5-Player Mode,<br>
+						Grab weapons and gear, and listen closely for<br>
+						those toxic gas warning sirens.<br>
+						Kill or be killed!<br>
+					</p>
+				</div>			
+				<br><br><br>
+				<div class="slideshow-container">
+					<h2> Screenshots </h2>
+				  <div class="mySlides">
+					<img src="http://www.gameosx.com/wp-content/uploads/2017/07/h1z1-mac-download.jpg" style="width:75%">
+				  </div>
+
+				  <div class="mySlides">
+					<img src="https://steamgamereview.com/wp-content/uploads/2017/07/60295fc1e995c8b92068a54142f31dc5-1078x516.jpeg" style="width:75%">
+				  </div>
+
+				  <div class="mySlides">
+					<img src="https://i.ytimg.com/vi/3nlJ-NuaMRo/maxresdefault.jpg" style="width:75%">
+				  </div>
+				  
+				  <div class="mySlides">
+					<img src="https://cdn.mos.cms.futurecdn.net/vVshgh6rDsNDQ4RzTgYLSK.jpg" style="width:75%">
+				  </div>
+
+				  <!-- Next and previous buttons -->
+				  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<script>
+					var slideIndex = 1;
+						showSlides(slideIndex);
+					function plusSlides(n) {
+					  showSlides(slideIndex += n);
+					}
+
+					function currentSlide(n) {
+					  showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+					  var i;
+					  var slides = document.getElementsByClassName("mySlides");
+					  if (n > slides.length) {slideIndex = 1}    
+					  if (n < 1) {slideIndex = slides.length}
+					  for (i = 0; i < slides.length; i++) {
+						  slides[i].style.display = "none";  
+					  }
+					  slides[slideIndex-1].style.display = "block";  
+					}
+				</script>
+				<br><br><br>
+				<h2>Media</h2><br><br>
+				<div>
+					<iframe width="560" height="315" style="float:left; margin-left: 70px;" src="https://www.youtube.com/embed/ChkwUSwRHMg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>	
+					</iframe>
+						<a href= "https://www.h1z1.com/home">
+							<img src="h1z1Char.png" style="width:auto;height:315px;">
+						</a>
+						<h3 style="text-align: right; margin-right: 80px;">Click above to view the Official H1Z1 website!</h3>
+				</div><br><br><br>
+				<h1>Anywhere, USA</h1>
+				
+				<img src="h1z1Anywhere.jpg" usemap="#anywhere-map" id="gamemap">
+				<map name="anywhere-map">
+    					<area target="" alt="PleasantValley" title="PleasantValley" href="http://h1z1.wikia.com/wiki/Pleasant_Valley" coords="396,478,87" shape="circle">
+    					<area target="" alt="BumjickFarms" title="BumjickFarms" href="http://h1z1.wikia.com/wiki/Bumjick%20Farms?flow=create-page-article-redlink&amp;redlink=1&amp;veaction=edit&amp;tracked=true" coords="310,582,35" shape="circle">
+    					<area target="" alt="PisspotCreek" title="PisspotCreek" href="http://h1z1.wikia.com/wiki/Pisspot_Creek" coords="461,859,39" shape="circle">
+    					<area target="" alt="DeSotoService" title="DeSotoService" href="http://h1z1.wikia.com/wiki/De_Soto_Service_Stop" coords="643,828,46" shape="circle">
+    					<area target="" alt="RubyLake" title="RubyLake" href="http://h1z1.wikia.com/wiki/Ruby%20Lake?flow=create-page-article-redlink&amp;redlink=1&amp;veaction=edit&amp;tracked=true" coords="694,711,35" shape="circle">
+    					<area target="" alt="Cranberry" title="Cranberry" href="http://h1z1.wikia.com/wiki/Cranberry?flow=create-page-article-redlink&amp;redlink=1&amp;veaction=edit&amp;tracked=true" coords="758,663,42" shape="circle">
+    					<area target="" alt="MistyPeakDam" title="MistyPeakDam" href="http://h1z1.wikia.com/wiki/Misty%20Peak%20Dam?flow=create-page-article-redlink&amp;redlink=1&amp;veaction=edit&amp;tracked=true" coords="665,575,52" shape="circle">
+    					<area target="" alt="LongPineDev" title="LongPineDev" href="http://h1z1.wikia.com/wiki/Lone%20Pine%20Development?flow=create-page-article-redlink&amp;redlink=1&amp;veaction=edit&amp;tracked=true" coords="853,618,40" shape="circle">
+    					<area target="" alt="BubbasTruckStop" title="BubbasTruckStop" href="http://h1z1.wikia.com/wiki/Bubba%27s_Truck_Stop" coords="838,549,37" shape="circle">
+    					<area target="" alt="VillasDev" title="VillasDev" href="http://h1z1.wikia.com/wiki/The%20Villas%20Development?flow=create-page-article-redlink&amp;redlink=1&amp;veaction=edit&amp;tracked=true" coords="870,422,47" shape="circle">
+    					<area target="" alt="RanchitoTaquito" title="RanchitoTaquito" href="http://h1z1.wikia.com/wiki/Ranchito%20Taquito?flow=create-page-article-redlink&amp;redlink=1&amp;veaction=edit&amp;tracked=true" coords="809,234,77" shape="circle">
+    					<area target="" alt="DragonLake" title="DragonLake" href="http://h1z1.wikia.com/wiki/Dragon%20Lake?flow=create-page-article-redlink&amp;redlink=1&amp;veaction=edit&amp;tracked=true" coords="718,305,54" shape="circle">
+    					<area target="" alt="HemingtonWayTruckstop" title="HemingtonWayTruckstop" href="http://h1z1.wikia.com/wiki/Hemingtonway%20Truck%20Stop?flow=create-page-article-redlink&amp;redlink=1&amp;veaction=edit&amp;tracked=true" coords="246,725,54" shape="circle">
+    					<area target="" alt="HumperdinkGorge" title="HumperdinkGorge" href="http://h1z1.wikia.com/wiki/Humperdink%20Gorge?flow=create-page-article-redlink&amp;redlink=1&amp;veaction=edit&amp;tracked=true" coords="477,577,56" shape="circle">
+    					<area target="" alt="WakeHillsHamlet" title="WakeHillsHamlet" href="http://h1z1.wikia.com/wiki/Wake%20Hills%20Hamlet?flow=create-page-article-redlink&amp;redlink=1&amp;veaction=edit&amp;tracked=true" coords="318,855,52" shape="circle">
+    					<area target="" alt="RadioStation" title="RadioStation" href="http://h1z1.wikia.com/wiki/K69.0%20FM%20Radio%20Station?flow=create-page-article-redlink&amp;redlink=1&amp;veaction=edit&amp;tracked=true" coords="411,676,47" shape="circle">
+    					<area target="" alt="Runamok" title="Runamok" href="http://h1z1.wikia.com/wiki/Runamok%20Campsite?flow=create-page-article-redlink&amp;redlink=1&amp;veaction=edit&amp;tracked=true" coords="173,790,42" shape="circle">
+				</map>
+				<br><br><h3>Social Media</h3><br><br>
+				<a class="twitter-timeline" data-width="40%" data-height="500" href="https://twitter.com/H1Z1?lang=en">Tweets by H1Z1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
+				
+				<a href="https://www.facebook.com/H1Z1/" class="fa fa-facebook"></a>
+				<a href="https://www.instagram.com/h1z1/?hl=en" class="fa fa-instagram"></a>
+				<a href="https://www.reddit.com/r/h1z1/" class="fa fa-reddit"></a><br>
+				
+			</main>
+			
+			<footer id="mainFooter">
+				<p> &#9400; Group 4
+				</p>
+			</footer>
+			
+		</div>
+	</body>
+</html>
